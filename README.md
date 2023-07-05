@@ -1,46 +1,56 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## TASK #1
+Відтворіть анімацію, яка показана у відео 'task1.mov'.
 
-## Available Scripts
+Ви можете використовувати будь-які доступні засоби: js, css (sass/scss/tailwind), будь-яку бібліотеку тощо. Оцінюватиметься плавність анімації та вибір засобів.
 
-In the project directory, you can run:
+## TASK #2
+Орієнтуючись на дані у файлі 'task2.json', напишіть код для:
+1. Розрахунку ціни одного айтема з data за певним курсом.
+2. Розрахунку сумарної ціни декількох айтемів за певним курсом.
 
-### `npm start`
+Приклад user flow:
+1. Користувач хоче отримати ціну в BTC за айтем 1 в списку.
+2. Користувач хоче отримати ціну в USDT за айтем 3 в списку.
+3. Користувач хоче отримати загальну ціну айтемів 1, 2, 3 в USDT.
+4. Користувач хоче отримати загальну ціну всіх айтемів в BTC.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Врахуйте можливе масштабування коду: збільшення кількості айтемів та currency pairs. Оцінюватиметься якість, складність та гнучкість коду.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+{
+"data": [
+{
+"id": 1,
+"price": 500,
+"currency": "USDT"
+},
+{
+"id": 2,
+"price": 700,
+"currency": "BTC"
+},
+{
+"id": 3,
+"price": 900,
+"currency": "ETH"
+},
+{
+"id": 4,
+"price": 1000,
+"currency": "BTC"
+},
+{
+"id": 5,
+"price": 1200,
+"currency": "USDT"
+}
+],
+"currencies-pairs": {
+"USDT-BTC": 0.000035,
+"USDT-ETH": 0.00053,
+"BTC-USDT": 28894.19,
+"BTC-ETH": 15.31,
+"ETH-USDT": 1884.68,
+"ETH-BTC": 0.065
+}
+}
